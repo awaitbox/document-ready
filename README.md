@@ -1,17 +1,23 @@
 
-documentready
-=============
+document-ready
+==============
 
 Await for the `document` to be ready.
 
 The `documentReady` async function returns a promise that will resolve when the
-`DOMContentLoaded` event fires in the future (i.e. the `document` is "ready"),
-or resolves immediately if `DOMContentLoaded` already happened.
+`DOMContentLoaded` event fires in the future (i.e. when the `document` becomes
+"ready", a term that jQuery made popular), or resolves immediately if
+`DOMContentLoaded` already happened. Sub-resources (img tags, scripts, audio
+tags, etc) might not be done loading yet, and in this case you'll want to use
+[window-loaded](https://github.com/awaitbox/window-loaded).
+
+Read more on the `DOMContentLoaded` event [on
+MDN](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded).
 
 You can use it in async functions:
 
 ```js
-import documentReady from 'documentready'
+import documentReady from 'document-ready'
 
 async function main() {
   await documentReady()
@@ -24,7 +30,7 @@ main()
 You can of course use it as a Promise:
 
 ```js
-import documentReady from 'documentready'
+import documentReady from 'document-ready'
 
 documentReady()
   .then( data => console.log( 'begin awesome!' ) )
@@ -33,7 +39,7 @@ documentReady()
 Chain values will pass through if you use it in a Promise chain:
 
 ```js
-import documentReady from 'documentready'
+import documentReady from 'document-ready'
 
 fetch( ... )
   .then( ... )
