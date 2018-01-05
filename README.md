@@ -1,6 +1,6 @@
 
-document-ready
-==============
+@awaitbox/document-ready
+========================
 
 Await for the `document` to be ready.
 
@@ -17,7 +17,7 @@ MDN](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded).
 You can use it in async functions:
 
 ```js
-import documentReady from 'document-ready'
+import documentReady from '@awaitbox/document-ready'
 
 async function main() {
   await documentReady()
@@ -30,7 +30,7 @@ main()
 You can of course use it as a Promise:
 
 ```js
-import documentReady from 'document-ready'
+import documentReady from '@awaitbox/document-ready'
 
 documentReady()
   .then( data => console.log( 'begin awesome!' ) )
@@ -39,7 +39,7 @@ documentReady()
 Chain values will pass through if you use it in a Promise chain:
 
 ```js
-import documentReady from 'document-ready'
+import documentReady from '@awaitbox/document-ready'
 
 fetch( ... )
   .then( ... )
