@@ -55,4 +55,4 @@ you'll need to run this through a transpiler like [Babel](http://babeljs.io)
 (and I recommend using the
 [fast-async](https://github.com/MatAtBread/fast-async) plugin to get the best
 results). See some tips here on wiring it up with
-[Webpack](https://webpack.js.org): 2ality.com/2017/06/pkg-esnext.html.
+[Webpack](https://webpack.js.org): http://2ality.com/2017/06/pkg-esnext.html.
