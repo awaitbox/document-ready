@@ -11,7 +11,7 @@ The `documentReady` async function returns a promise that will resolve when the
 tags, etc) might not be done loading yet, and in this case you'll want to use
 [window-loaded](https://github.com/awaitbox/window-loaded).
 
-Read more on the `DOMContentLoaded` event [on
+Learn more about the `DOMContentLoaded` event [on
 MDN](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded).
 
 You can use it in async functions:
