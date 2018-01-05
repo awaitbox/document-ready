@@ -4,6 +4,14 @@
   "main": "src/index.js",
   "esnext": "src/index.js",
   "module": "src/index.js",
+  "homepage": "https://github.com/awaitbox/document-ready",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:awaitbox/document-ready.git"
+  },
+  "bugs": {
+    "url": "https://github.com/awaitbox/document-ready/issues"
+  },
   "keywords": [
     "async",
     "async-functions",
