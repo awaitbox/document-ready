@@ -4,6 +4,8 @@
 
 Await for the `document` to be ready.
 
+#### `npm i @awaitbox/document-ready --save`
+
 The `documentReady` async function returns a promise that will resolve when the
 `DOMContentLoaded` event fires in the future (i.e. when the `document` becomes
 "ready", a term that jQuery made popular), or resolves immediately if
