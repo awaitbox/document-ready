@@ -17,6 +17,5 @@ function documentReady( _passThrough ) {
 
 }
 
-documentReady.default = documentReady
-
-module.exports = documentReady
+export default documentReady
+export { documentReady }

@@ -1,16 +1,31 @@
 {
   "name": "@awaitbox/document-ready",
   "version": "1.0.10",
-  "main": "src/index.js",
+  "main": "index.js",
   "esnext": "src/index.js",
   "module": "src/index.js",
-  "homepage": "https://github.com/awaitbox/document-ready",
+  "scripts": {
+    "clean": "builder run build:clean",
+    "build": "builder run build:prod",
+    "dev": "builder run build:dev",
+    "test": "builder run npm:test",
+    "preversion": "builder run npm:preversion",
+    "version": "builder run npm:version",
+    "postversion": "builder run npm:postversion"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:awaitbox/document-ready.git"
   },
+  "author": "Joe Pea <joe@trusktr.io>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/awaitbox/document-ready/issues"
+  },
+  "homepage": "https://github.com/awaitbox/document-ready",
+  "devDependencies": {
+    "builder": "^3.2.3",
+    "builder-js-package": "trusktr/builder-js-package"
   },
   "keywords": [
     "async",
