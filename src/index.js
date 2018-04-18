@@ -18,4 +18,4 @@ function documentReady( _passThrough ) {
 }
 
 export default documentReady
-export { documentReady }
+export const version = '2.0.0'
